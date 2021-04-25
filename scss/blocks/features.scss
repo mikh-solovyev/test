@@ -1,0 +1,22 @@
+.features{
+    @include flexRow-JCfs-ALIc ($justify-content: space-between);
+    width: auto;
+    position: relative;
+    margin: 0 rem(85px);
+
+    @include tablet {
+        margin: 0;
+    }
+    @include phone {
+        flex-direction: column;
+        /* flex: 1; */
+        min-height: rem(565px);
+        margin-top: 0;
+        padding: rem(53px) 0;
+
+        @include flexCol-JCsb-ALIfs ($justify-content: space-around);
+        min-height: rem(565px);
+        margin-top: 0;
+        padding: rem(37px) 0;
+    }
+}

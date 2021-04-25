@@ -1,0 +1,65 @@
+@mixin H2font ($font-size: rem(48px), $line-height: rem(58px), $font-weight: bold, $color: $light) {
+    font-weight: $font-weight;
+    font-size: $font-size;
+    line-height: $line-height;
+    color: $color;
+}
+
+@mixin H3font ($font-size: rem(27px), $line-height: rem(32px), $font-weight: bold, $color: $black) {
+    font-weight: $font-weight;
+    font-size: $font-size;
+    line-height: $line-height;
+    color: $color;
+}
+
+@mixin baseFont ($font-size: rem(18px), $line-height: rem(22px), $font-weight: 400, $color: $light) {
+    font-weight: $font-weight;
+    font-size: $font-size;
+    line-height: $line-height;
+    color: $color;
+}
+
+@mixin flexRow-JCfs-ALIc ($display: flex, $justify-content: flex-start, $align-items: center) {
+    display: $display;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+@mixin flexCol-JCsb-ALIfs ($display: flex, $flex-direction: column, $justify-content: space-between, $align-items: flex-start) {
+    display: $display;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+@mixin flexCol-JCc-ALIfs ($display: flex, $flex-direction: column, $justify-content: center, $align-items: flex-start) {
+    display: $display;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+@mixin textOverflow3 ($display: inline-flex, $-webkit-line-clamp: 3, $-webkit-box-orient: vertical, $overflow: hidden) {
+    display: $display;
+    -webkit-line-clamp: $-webkit-line-clamp;
+    -webkit-box-orient: $-webkit-box-orient;
+    overflow: $overflow;
+}
+
+@mixin tabletMin {
+    @media screen and (min-width: $tablet) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (max-width: $tablet) {
+        @content;
+    }
+}
+
+@mixin phone {
+    @media screen and (max-width: $phone) {
+        @content;
+    }
+}

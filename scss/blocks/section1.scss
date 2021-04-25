@@ -1,0 +1,148 @@
+.section1 {
+    min-height: rem(652px);
+    position: relative;
+    background: url(../../img/background/layer_list1100.png) left top 51% no-repeat;
+
+    @include tablet {
+        background: url(../../img/background/layer_list1100.png) left -1% top 12% no-repeat;
+        /* padding: rem(279px) 0 0; */
+        min-height: rem(1000px);
+    }
+
+    @include phone {
+        background: none;
+        box-sizing: border-box;
+        /* padding: rem(50px) 0 0 0; */
+        min-height: rem(707px);
+        margin-bottom: 0;
+    }
+
+    &::before {
+        content: url(../../img/background/raspberry1100.png);
+        left: 0;
+        top: 68.5%;
+        position: absolute;
+        z-index: 100;
+
+        @include tablet {
+            content: url(../../img/background/raspberry1100.png);
+            top: 76%;
+        }
+
+        @include phone {
+            content: "";
+        }
+    }
+
+    /* @include tablet {
+        min-height: rem(1000px);
+    }
+
+    @include phone {
+        min-height: rem(707px);
+        margin-bottom: 0;
+    } */
+
+    &__container {
+        position: relative;
+        @include flexCol-JCc-ALIfs($justify-content: flex-start, $align-items: center);
+        padding: 0 0 rem(16px);
+
+        @include tablet {
+            padding: 0;
+        }
+    }
+
+
+    &__headline {
+        width: 100%;
+        text-align: center;
+        margin-bottom: rem(50px);
+        position: relative;
+        padding-top: 101px;
+
+        @include tablet {
+            padding-top: 279px;
+        }
+
+        @include phone {
+            margin-bottom: 0;
+            padding-top: 51px;
+        }
+    }
+
+    &__content {
+        width: 100%;
+    }
+
+
+    &__item {
+        flex: 1;
+        position: relative;
+
+        @include tablet {
+            margin-right: 0;
+        }
+
+        @include phone {
+            margin-bottom: rem(36px);
+        }
+
+        &-img {
+            max-width: none;
+        }
+
+        &-icon {
+            flex: 0;
+            margin: 0;
+            padding-bottom: rem(125px);
+
+            @include tablet {
+                display: none;
+            }
+        }
+
+
+        &:last-child {
+            margin-right: 0;
+
+            @include phone {
+                margin-bottom: 0;
+            }
+
+            &::before {
+                display: none;
+            }
+        }
+    }
+
+    &__title {
+        @include H2font($color: $dark);
+        text-transform: uppercase;
+
+        @include tablet {
+            margin: 0;
+        }
+
+        @include phone {
+            @include H2font($font-size: rem(40px), $line-height: rem(36px), $color: $black);
+        }
+    }
+
+    &__subtitle {
+        @include baseFont($color: $baseFontColor);
+        width: rem(436px);
+        text-align: center;
+        margin: rem(20px) auto 0;
+
+        @include tablet {
+            margin: rem(6px) auto 0;
+        }
+
+        @include phone {
+            width: 100%;
+            margin: rem(7px) auto 0;
+            padding: 6px rem(22px) 0;
+        }
+    }
+}

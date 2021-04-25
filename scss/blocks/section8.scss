@@ -1,0 +1,28 @@
+.section8 {
+    min-height: $sectionHeight +100px;
+
+    @include tablet{
+        min-height: $sectionHeight - 9px;
+    }
+
+    @include phone {
+        min-height: 631px;
+    }
+
+    &__container {
+        position: relative;
+    }
+
+    &__map {
+        height: 652px;
+        width: 100%;
+
+        @include tablet{
+           height: 526px;
+        }
+
+        @include phone {
+            height: 482px;
+        }
+    }
+}

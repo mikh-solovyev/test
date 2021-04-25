@@ -1,0 +1,128 @@
+.section5 {
+    position: relative;
+    background: $light;
+    min-height: rem(652px);
+
+    @include tablet {
+        min-height: rem(976px);
+    }
+
+    @include phone {
+        min-height: rem(800px);
+    }
+
+
+
+    &__container {
+        /* height: rem(652px); */
+        position: relative;
+        padding: 60px rem(79px) 0;
+        @include flexCol-JCsb-ALIfs($justify-content: flex-start, $align-items: center);
+
+        @include tablet {
+            padding: rem(180px) rem(22px);
+        }
+
+        @include phone {
+            padding: rem(96px) rem(10px) rem(82px);
+        }
+    }
+
+    &__title {
+        @include H2font($color: $dark);
+        margin-bottom: rem(28px);
+        text-transform: uppercase;
+        position: relative;
+        width: 100%;
+        text-align: center;
+
+        @include tablet {
+            margin-bottom: rem(33px);
+
+        }
+
+        @include phone {
+            @include H2font($font-size: rem(40px), $line-height: rem(36px), $color: $black);
+            margin-bottom: rem(26px);
+        }
+
+        &::before {
+            content: url(../../img/pics/decor/Ягода-3.png);
+            top: -33%;
+            right: -6%;
+            position: absolute;
+
+            @include tablet {
+                content: url(../../img/pics/decor/Ягода-3__768.png);
+                top: -289%;
+                right: -3%;
+            }
+
+            @include phone {
+                content: url(../../img/pics/decor/Ягода-3__480.png);
+                top: -214%;
+                right: -2%;
+            }
+        }
+    }
+
+    &__content {
+        margin-bottom: rem(15px);
+        overflow: hidden;
+        position: relative;
+        flex-shrink: 0;
+
+        @include tablet {
+            margin-bottom: rem(32px);
+        }
+
+        @include phone {
+            margin-bottom: rem(41px);
+        }
+    }
+
+    &__paginator {
+        position: relative;
+        width: 100%;
+
+        &::before {
+            content: url(../../img/pics/decor/Ягоды2_1100.png);
+            top: 39.5%;
+            left: rem(-80px);
+            position: absolute;
+            z-index: 1;
+
+            @include tablet {
+                content: url(../../img/pics/decor/Ягоды2_768.png);
+                top: 163%;
+                right: 0;
+                left: -3%;
+            }
+
+            @include phone {
+                content: url(../../img/pics/decor/Ягоды2_480.png);
+                top: 98%;
+                left: -3%;
+            }
+        }
+
+        &::after {
+            content: url(../../img/pics/decor/Узор1_1100.png);
+            top: -39%;
+            left: -9%;
+            position: absolute;
+
+            @include tablet {
+                content: url(../../img/pics/decor/Узор1_768.png);
+                top: 94%;
+                left: -3%;
+            }
+
+            @include phone {
+                content: url(../../img/pics/decor/Узор1-480.png);
+                top: 29%;
+                left: -3%;
+            }
+        }
+    }
+}

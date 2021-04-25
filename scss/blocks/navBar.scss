@@ -1,0 +1,23 @@
+.navBar {
+    padding-top: rem(5px);
+    min-height: rem(96px);
+
+    &__list {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        margin-right: rem(28px);
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__link {
+        line-height: rem(30px);
+        color: $light;
+        text-decoration: none;
+    }
+}

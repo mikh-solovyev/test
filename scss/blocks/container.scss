@@ -1,0 +1,14 @@
+.container {
+    min-height: 100%;
+    width: 100%;
+    max-width: $containerWidth;
+    margin: 0 auto;
+    position: relative;
+
+    /* @include tablet {
+        width: 100%;
+        min-height: 100%;
+    } */
+
+
+}

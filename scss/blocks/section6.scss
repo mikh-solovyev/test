@@ -1,0 +1,83 @@
+.section6 {
+    min-height: $sectionHeight +10px;
+
+    @include tablet {
+        min-height: $sectionHeight768;
+    }
+
+    @include phone {
+        min-height: rem(518px);
+    }
+
+    &__container {
+        @include flexCol-JCc-ALIfs ($justify-content: flex-start, $align-items: center);
+        padding-top: 62px;
+        margin-bottom: 31px;
+
+        @include tablet {
+            padding-top: 68px;
+        }
+
+        @include phone {
+            padding-top: 112px;
+        }
+
+        &::before {
+            content: "";
+            background: url(../../img/pics/decor/leafS6_1100.png) no-repeat;
+            background-size: contain;
+            width: 5rem;
+            height: 4.27778rem;
+            position: absolute;
+            top: 13%;
+            right: 9%;
+
+            @include tablet {
+                top: 20%;
+                right: 4%;
+                width: 75px;
+            }
+
+            @include phone {
+                top: 26%;
+                right: 1%;
+                width: 60px;
+            }
+        }
+
+        &::after {
+            content: "";
+            background: url(../../img/pics/decor/leafS6-2_1100.png) no-repeat;
+            background-size: contain;
+            width: 4rem;
+            height: 7.5rem;
+            position: absolute;
+            top: 69%;
+            left: 9%;
+
+            @include tablet {
+                top: 55%;
+                left: -2%;
+                height: 112px;
+            }
+
+            @include phone {
+                top: 64%;
+            }
+        }
+    }
+
+    &__title {
+        text-transform: uppercase;
+        @include H2font ($color: $dark);
+        margin-bottom: 31px;
+
+        @include tablet {
+            margin-bottom: 41px;
+        }
+
+        @include phone {
+            @include H2font ($font-size: rem(40px), $line-height: rem(36px), $color: $dark);
+        }
+    }
+}

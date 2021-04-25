@@ -1,0 +1,15 @@
+.contacts {
+    display: flex;
+    align-items: center;
+    &__img{
+        margin-right: rem(8px);
+        width: rem(14px);
+        height: rem(15px);
+        fill: $light;
+    }
+    &__tel{
+    }
+    &__phone {
+        @include baseFont (rem(22px), 18px);
+    }
+}
